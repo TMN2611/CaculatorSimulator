@@ -1,0 +1,128 @@
+:root {
+    --primary-:#374353;
+    --primary-20:#00000025;
+    --secondary-:#fff;
+    --secondary-20:rgba(255, 255, 255, 0.1);
+
+}
+.light-mode {
+  
+    --secondary-:#374353;
+    --secondary-20:#00000025;
+    --primary-:#fff;
+    --primary-20:rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    position: relative;
+    background-color:var(--secondary-) ;
+    width: 100vw;
+    height: 100vh;
+}
+.screen, .header {
+    font-size: 2.4rem;
+    height: 40px;
+    padding: 10px 20px;
+}
+.header__time {
+    font-size: 1.5rem;
+    height: 20px;
+    color: var(--secondary-);
+}
+.header__icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-);
+    margin-left: auto;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+.header__mode {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    border-radius: 50%;
+    position: relative;
+}
+.header__icon_back {
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    width: 100px;
+    height: 20px;
+    color: var(--secondary-);
+    background-color:var(--secondary-20);    
+    border-radius: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+
+   
+}
+.header__icon-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20px;
+    cursor: pointer;
+}
+.screen {
+    height: 150px;
+    color: var(--secondary-);
+}
+.screen__result {
+   height: 100px;
+    font-size: 7rem;
+    text-align: end;
+    margin-top: 20px;
+    
+
+}
+.screen__para {
+    text-align: end;
+}
+#form {
+    background-color:var(--primary-);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 40px;
+    overflow: hidden;
+}
+.btns {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    padding: 60px 20px;
+    grid-gap: 20px;
+    color:var(--secondary-) ;
+   
+}
+.btn {
+    height: 63px;
+    width: 63px;
+    color:var(--secondary-) ;
+
+    background-color: var(--primary-);
+    outline: none;
+    border: none;
+    box-shadow: -4px -5px 9px var(--secondary-20),4px 5px 9px var(--primary-20);
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 2rem;
+    
+}
+.btn:focus {
+    color: currentColor;
+    opacity: 50%;
+}
